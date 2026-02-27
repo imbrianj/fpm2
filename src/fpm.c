@@ -128,8 +128,11 @@ void fpm_init (char* opt_file_name, int tray_on_startup) {
     }
 
     /* Create data dir if not exists */
-    if(!g_file_test(g_build_filename (g_get_home_dir(), FPM_DIR, NULL), G_FILE_TEST_IS_DIR))
-	g_mkdir(g_build_filename (g_get_home_dir(), FPM_DIR, NULL), S_IRUSR | S_IWUSR | S_IXUSR);
+    gchar *data_dir = g_build_filename (g_get_home_dir(), FPM_DIR, NULL);
+    if (!g_file_test (data_dir, G_FILE_TEST_IS_DIR)) {
+	g_mkdir (data_dir, S_IRUSR | S_IWUSR | S_IXUSR);
+    }
+    g_free (data_dir);
 
     /* Check if password file exists */
     if(g_file_test (glb_filename, G_FILE_TEST_EXISTS)) {
@@ -505,7 +508,9 @@ int fpm_save_passitem (fpm_data *data) {
   while (valid) {
     gtk_tree_model_get(model, &iter, FPM_DATA_POINTER, &data1, -1);
     if( data == data1 ) {
-	row = atoi(gtk_tree_model_get_string_from_iter(model, &iter));
+	gchar *row_str = gtk_tree_model_get_string_from_iter (model, &iter);
+	row = atoi (row_str);
+	g_free (row_str);
 	break;
     }
     valid = gtk_tree_model_iter_next (model, &iter);
