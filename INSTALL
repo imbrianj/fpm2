@@ -1,0 +1,11 @@
+Installation Instructions
+*************************
+
+meson setup build
+meson compile -C build
+meson install -C build
+
+Update translations files:
+meson compile -C build fpm2-update-po
+
+For more information consult https://mesonbuild.com/

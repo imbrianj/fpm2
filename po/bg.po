@@ -1,0 +1,1133 @@
+# German translations for fpm2 package
+# German messages for fpm2.
+# Copyright (C) 2008 THE fpm2'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the fpm2 package.
+# Mike Constabel <mike@constabel.net>, 2008.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm2 0.72\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-31 11:45+0100\n"
+"PO-Revision-Date: 2008-07-07 17:17+0200\n"
+"Last-Translator: Yovko Yovkov <yyovkov@yyovkov.net>\n"
+"Language-Team: Bulgarian\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/interface.c:139 src/interface.c:1026 src/interface.c:1053 src/fpm.c:1475
+#: src/fpm.c:1476 src/fpm.c:1478 data/fpm2.desktop.in:2
+#: data/fpm2.metainfo.xml.in:7 data/fpm2.metainfo.xml.in:8
+msgid "Figaro's Password Manager 2"
+msgstr ""
+
+#: src/interface.c:153
+msgid "_File"
+msgstr "_Файл"
+
+#: src/interface.c:182
+#, fuzzy
+msgid "_Import Passwords"
+msgstr "_Внасяне на пароли"
+
+#: src/interface.c:190
+#, fuzzy
+msgid "_Export Passwords"
+msgstr "_Изнасяне на пароли"
+
+#: src/interface.c:203
+msgid "_Minimize to tray"
+msgstr "_Минимизиране"
+
+#: src/interface.c:218
+msgid "_Edit"
+msgstr "_Редактиране"
+
+#: src/interface.c:225 src/interface.c:2638
+msgid "Copy _Password"
+msgstr "Копиране на _парола"
+
+#: src/interface.c:237 src/interface.c:2646
+msgid "Copy _Username"
+msgstr "Копиране на п_отребител"
+
+#: src/interface.c:249 src/interface.c:2654
+msgid "Copy _Both"
+msgstr "Копиране на двете"
+
+#: src/interface.c:266 src/interface.c:2667
+msgid "_Add Item"
+msgstr "Eintrag _hinzufügen"
+
+#: src/interface.c:277 src/interface.c:2675
+msgid "_Edit Item"
+msgstr "_Добавяне на обект"
+
+#: src/interface.c:289 src/interface.c:2683
+#, fuzzy
+msgid "_Clone Item"
+msgstr "_Клониране на обект"
+
+#: src/interface.c:301 src/interface.c:2691
+msgid "_Delete Item"
+msgstr "_Изтриване на обект"
+
+#: src/interface.c:322
+#, fuzzy
+msgid "_View"
+msgstr "_Файл"
+
+#: src/interface.c:329
+#, fuzzy
+msgid "_Title"
+msgstr "Заглавие"
+
+#: src/interface.c:333
+#, fuzzy
+msgid "U_RL"
+msgstr "URL"
+
+#: src/interface.c:337
+#, fuzzy
+msgid "_User"
+msgstr "Потр."
+
+#: src/interface.c:341
+#, fuzzy
+msgid "_Password"
+msgstr "Парола:"
+
+#: src/interface.c:345
+#, fuzzy
+msgid "_Category"
+msgstr "Категория"
+
+#: src/interface.c:349
+#, fuzzy
+msgid "_Notes"
+msgstr "Бележки:"
+
+#: src/interface.c:353
+#, fuzzy
+msgid "_Launcher"
+msgstr "Програма:"
+
+#: src/interface.c:362
+#, fuzzy
+msgid "Tool_bar"
+msgstr "_Лента с инструменти"
+
+#: src/interface.c:367
+msgid "_Settings"
+msgstr "_Настройки"
+
+#: src/interface.c:374
+#, fuzzy
+msgid "_Launcher Preferences"
+msgstr "Страртиран Настройки"
+
+#: src/interface.c:382
+#, fuzzy
+msgid "Change _Password"
+msgstr "_Промяна на парола"
+
+#: src/interface.c:399
+msgid "_Help"
+msgstr "_Помощ"
+
+#: src/interface.c:406
+msgid "Current Password File"
+msgstr "_Текущ файл с пароли"
+
+#: src/interface.c:441
+msgid "New"
+msgstr "Нов"
+
+#: src/interface.c:456
+msgid "Jump"
+msgstr "Пуск"
+
+#: src/interface.c:463 src/fpm.c:67
+msgid "User"
+msgstr "Потр."
+
+#: src/interface.c:470
+msgid "Pass"
+msgstr "Пар."
+
+#: src/interface.c:484 src/fpm.c:69
+msgid "Category"
+msgstr "Категория"
+
+#: src/interface.c:519 src/interface.c:2177
+msgid "_Match case"
+msgstr "_Отличава малки и главни букви"
+
+#: src/interface.c:824
+msgid "View / Edit Password Item"
+msgstr "Преглед / Редактриане на обекти"
+
+#: src/interface.c:848
+msgid "Title:"
+msgstr "Заглавие:"
+
+#: src/interface.c:853
+msgid "URL / Arg:"
+msgstr "URL / Арг:"
+
+#: src/interface.c:858
+msgid "User Name:"
+msgstr "Потребителско име"
+
+#: src/interface.c:863
+msgid "Password:"
+msgstr "Парола:"
+
+#: src/interface.c:877
+msgid "Show Password"
+msgstr "Покажи парола"
+
+#: src/interface.c:896 src/callbacks.c:559 src/callbacks.c:625
+msgid "Category:"
+msgstr "Категория:"
+
+#: src/interface.c:901
+msgid "Include this password in the default list."
+msgstr "Добари паролата в списъка с подразбиращите се"
+
+#: src/interface.c:920
+msgid "Notes:"
+msgstr "Бележки:"
+
+#: src/interface.c:925
+msgid "Launcher:"
+msgstr "Програма:"
+
+#: src/interface.c:944
+msgid "Generate..."
+msgstr "Генериране..."
+
+#: src/interface.c:1040
+msgid "Welcome to"
+msgstr "Заповядайте в"
+
+#: src/interface.c:1065
+#, fuzzy
+msgid "Key _File:"
+msgstr "_Файл с ключове"
+
+#: src/interface.c:1071
+#, fuzzy
+msgid "_Password:"
+msgstr "Парола:"
+
+#: src/interface.c:1094 src/interface.c:1623 src/fpm.c:548 src/fpm.c:976
+msgctxt "key_file"
+msgid "<NONE>"
+msgstr ""
+
+#: src/interface.c:1233 src/interface.c:1245
+msgid "Autogenerate Password"
+msgstr "Автоматично енериране на пароли"
+
+#: src/interface.c:1263
+msgid "Number of Characters:"
+msgstr "Брой символи:"
+
+#: src/interface.c:1273
+msgid "Use lowercase letters (a, b, c,... )"
+msgstr "Използване на малки бувки (a, b, c,... )"
+
+#: src/interface.c:1277
+msgid "Use uppercase letters (A, B, C.. )"
+msgstr "Използване на големи букви (A, B, C.. )"
+
+#: src/interface.c:1281
+msgid "Use numbers (1, 2, 3... )"
+msgstr "Използване на числа (1, 2, 3... )"
+
+#: src/interface.c:1285
+msgid "Use symbols (!, @, #...)"
+msgstr "Използване на символи (!, @, #...)"
+
+#: src/interface.c:1289
+msgid "Avoid ambiguous characters (l,I&1, O&0, etc.)"
+msgstr "Изключва неопределени символи (l, I&1, O&0, usw.)"
+
+#: src/interface.c:1312
+msgid "Bit equivalent: 2 ^"
+msgstr "Еквивалентен бит: 2^"
+
+#: src/interface.c:1320
+msgid "Number of combinations: 10 ^"
+msgstr "Брой комбинации: 10^"
+
+#: src/interface.c:1328
+msgid "Generation Options"
+msgstr "Оптимизиране на генериране"
+
+#: src/interface.c:1337
+msgid "Generated Password:"
+msgstr "Генерирана парола:"
+
+#: src/interface.c:1355
+msgid "Generate!"
+msgstr "Генериране!"
+
+#: src/interface.c:1460
+#, fuzzy
+msgid "Choose Master Password"
+msgstr "Избиране на парола"
+
+#: src/interface.c:1481
+#, fuzzy
+msgid "Welcome to Figaro's Password Manager 2"
+msgstr "Заповядайте във Figaro's Password Manager 2"
+
+#: src/interface.c:1502
+#, fuzzy
+msgid ""
+"Please choose the password which will be used to encrypt your passwords.  It "
+"is vital that you remember this password; without it, you can not access "
+"your password list."
+msgstr ""
+"Figaro's Password Manager!\n"
+"\n"
+"Изберете парола, която ще бъде използвана за да крипитира вашите "
+"пароли.Важно е да запомните тази парола, защото без нея няма да имате достъп "
+"до паролите съхранени във вашия списък."
+
+#: src/interface.c:1529
+#, fuzzy
+msgid "Please choose a _password:"
+msgstr "Избиране на _парола:"
+
+#: src/interface.c:1538
+#, fuzzy
+msgid "_Verify it by typing it again here:"
+msgstr "Потвърждава на парола:"
+
+#: src/interface.c:1548
+msgid "_Cipher:"
+msgstr ""
+
+#: src/interface.c:1566
+msgid "KDF _iterations:"
+msgstr ""
+
+#: src/interface.c:1582
+msgid "<b>Master Password</b>"
+msgstr "<b>Парола за достъп</b>"
+
+#: src/interface.c:1603
+#, fuzzy
+msgid ""
+"Optionally you may specify the file which will be used to encrypt your "
+"passwords along with master password. Do not lose this file, is necessary "
+"for access to your passwords."
+msgstr ""
+"Figaro's Password Manager!\n"
+"\n"
+"Може да изберете файл, който заедно с вашата парола ще бъде използван за "
+"криптиране на паролите. Пазете внимателно този файл! Той е необходим за "
+"разчитането на вашите пароли!"
+
+#: src/interface.c:1615
+#, fuzzy
+msgid "_Key File:"
+msgstr "_Файл с ключове:"
+
+#: src/interface.c:1634
+#, fuzzy
+msgid "<b>Key File</b>"
+msgstr "<b>Arhiwi</b>"
+
+#: src/interface.c:1751
+#, fuzzy
+msgid "Launcher Preferences"
+msgstr "Пуск настройки"
+
+#: src/interface.c:1802 src/interface.c:1826
+msgid "to primary sel."
+msgstr "основен избор"
+
+#: src/interface.c:1808 src/interface.c:1832
+msgid "to clipboard"
+msgstr "в клипборд"
+
+#: src/interface.c:1814 src/interface.c:1838
+msgid "don't copy"
+msgstr "не копирай"
+
+#: src/interface.c:1844
+#, fuzzy
+msgid "Copy _User:"
+msgstr "Копиране _потребител"
+
+#: src/interface.c:1851
+#, fuzzy
+msgid "Command _Line:"
+msgstr "Команден _ред:"
+
+#: src/interface.c:1858
+#, fuzzy
+msgid "Copy Pass_word:"
+msgstr "Копиране _парола:"
+
+#: src/interface.c:1865
+#, fuzzy
+msgid "Launcher _Name:"
+msgstr "_Име на пуск:"
+
+#: src/interface.c:1896
+#, fuzzy
+msgid "<b>Launcher</b>"
+msgstr "Пуск:"
+
+#: src/interface.c:1905
+msgid ""
+"You can use the following variables in your command line:\n"
+"$a = argument / url\n"
+"$u = user name\n"
+"$p = password (not recommened)"
+msgstr ""
+"Можете да използвате следните променливи:\n"
+"$a = Аргумент / URL\n"
+"$u = Потребител\n"
+"$p = Парола (не се препоръчва)"
+
+#: src/interface.c:1911
+#, fuzzy
+msgid "Command Line _Variables"
+msgstr "Команден Ред:"
+
+#: src/interface.c:2012
+msgid "FPM2"
+msgstr ""
+
+#: src/interface.c:2013
+msgid ""
+"(c) 2000-2003 John Conneely & other contributors\n"
+"(c) 2008-2025 Aleš Koval"
+msgstr ""
+
+#: src/interface.c:2014
+#, fuzzy
+msgid ""
+"Figaro's Password Manager\n"
+"Adapted for GTK3."
+msgstr ""
+"Figaro's Password Manager\n"
+"GTK2 вариант"
+
+#: src/interface.c:2015
+msgid ""
+"This application is licensed under the GNU General Public License Version 2 "
+"or (at your option) any later version.\n"
+msgstr ""
+"Този продукт е лицензиран под GNU General Public License версия 2 или (по "
+"ваше желание) всяка следваща версия.\n"
+
+#: src/interface.c:2018
+msgid "FPM2 website"
+msgstr "FPM2 в интернет"
+
+#: src/interface.c:2116
+msgid "Preferences"
+msgstr "Настройки"
+
+#: src/interface.c:2144
+msgid "Search in _title"
+msgstr "Търсене по _заглавие"
+
+#: src/interface.c:2148
+msgid "Search in u_rl"
+msgstr "Търсене по _URL"
+
+#: src/interface.c:2152
+msgid "Search in _user"
+msgstr "Търсене по _потребител"
+
+#: src/interface.c:2156
+msgid "Search in _notes"
+msgstr "Търсене по _бележки"
+
+#: src/interface.c:2160
+msgid "<b>Search Scope</b>"
+msgstr "<b>Обхват на тъесене</b>"
+
+#: src/interface.c:2181
+msgid "Only in current _category"
+msgstr "Само в текущата _категория"
+
+#: src/interface.c:2185
+msgid "<b>Search Conditions</b>"
+msgstr "<b>Правила за търсене</b>"
+
+#: src/interface.c:2190
+msgid "Search"
+msgstr "Търсене"
+
+#: src/interface.c:2210
+msgid "Save when entry _added"
+msgstr "Записване при добавяне на обект"
+
+#: src/interface.c:2214
+msgid "Save when entry _changed"
+msgstr "Записване при _промяна на обект"
+
+#: src/interface.c:2218
+msgid "Save when entry _deleted"
+msgstr "Записване при _изтриване на обект"
+
+#: src/interface.c:2222
+msgid "Save on _quit"
+msgstr "Записване при _изход"
+
+#: src/interface.c:2226
+msgid "<b>Automatic File Saving</b>"
+msgstr "<b>Автоматично записване на файл</b>"
+
+#: src/interface.c:2243
+msgid "Create a backup copy of _files"
+msgstr "Създаване на резервно копие на _файловете"
+
+#: src/interface.c:2252
+msgid "Keep "
+msgstr "Запази "
+
+#: src/interface.c:2263
+msgid "  history backup files"
+msgstr "  История"
+
+#: src/interface.c:2267
+msgid "<b>File Saving</b>"
+msgstr "<b>Архиви</b>"
+
+#: src/interface.c:2272
+msgid "Saving"
+msgstr "Записване"
+
+#: src/interface.c:2292
+msgid "Enable tray _icon"
+msgstr "Разреши икона в _лентата"
+
+#: src/interface.c:2296
+msgid "Tray icon always _visible"
+msgstr "_Постоянна икона в лентата"
+
+#: src/interface.c:2305
+msgid "Auto _minimize to tray icon"
+msgstr "_Автоматично минимизиране в лентата"
+
+#: src/interface.c:2320 src/interface.c:2352
+msgid "after "
+msgstr "след "
+
+#: src/interface.c:2329 src/interface.c:2361
+msgid " minutes"
+msgstr "минути "
+
+#: src/interface.c:2337
+msgid "_Lock program past minimize"
+msgstr "_Заключи програмата след минимизиране"
+
+#: src/interface.c:2365
+msgid "<b>Tray Icon</b>"
+msgstr "<b>Икона за лентата</b>"
+
+#: src/interface.c:2370
+msgid "Tray Icon"
+msgstr "Символ за лентата"
+
+#: src/interface.c:2391
+#, fuzzy
+msgid "_Open this category"
+msgstr "_Отвори тази категория"
+
+#: src/interface.c:2401
+msgid "Open _search dialog"
+msgstr ""
+
+#: src/interface.c:2404
+#, fuzzy
+msgid "<b>On Startup</b>"
+msgstr "При стартиране"
+
+#: src/interface.c:2422
+#, fuzzy
+msgid "Call Launcher"
+msgstr "Програма:"
+
+#: src/interface.c:2423
+#, fuzzy
+msgid "Copy Username"
+msgstr "Копиране на п_отребител"
+
+#: src/interface.c:2424
+#, fuzzy
+msgid "Copy Password"
+msgstr "Копиране на _парола"
+
+#: src/interface.c:2425
+#, fuzzy
+msgid "Copy Both"
+msgstr "Копиране на двете"
+
+#: src/interface.c:2426
+msgid "Open Edit Window"
+msgstr ""
+
+#: src/interface.c:2428
+msgid "<b>When Activated Entry</b>"
+msgstr ""
+
+#: src/interface.c:2450
+msgid "_Clear target after paste"
+msgstr "_Изчистване на обекта след поставяне"
+
+#: src/interface.c:2466
+msgid "in "
+msgstr ""
+
+#: src/interface.c:2475
+msgid " seconds"
+msgstr ""
+
+#: src/interface.c:2481
+#, fuzzy
+msgid "<b>Copy Target</b>"
+msgstr "<b>Копиране на обект</b>"
+
+#: src/interface.c:2486
+msgid "Others"
+msgstr "Други"
+
+#: src/interface.c:2750
+msgid "Generate Entropy"
+msgstr "Ентропия на генериране"
+
+#: src/interface.c:2765
+#, fuzzy
+msgid "<b>Please move your mouse to collect entropy</b>"
+msgstr "<b>Движете мишката за натрупване на ентропия</b>"
+
+#: src/interface.c:2797
+msgid "_Show / Hide"
+msgstr "_Покажи / Скрий"
+
+#: src/interface.c:2805
+msgid "_Lock"
+msgstr "_Заключи"
+
+#: src/interface.c:2813
+msgid "_Unlock"
+msgstr "_Отключи"
+
+#: src/interface.c:2880
+msgid "Icons and Text"
+msgstr "Икони и текст"
+
+#: src/interface.c:2886
+msgid "Icons Only"
+msgstr "Само икони"
+
+#: src/interface.c:2891
+msgid "Text Only"
+msgstr "Само текст"
+
+#: src/interface.c:2901
+msgid "Hide toolbar"
+msgstr "Скрий лентата с инструментите"
+
+#: src/callbacks.c:239
+msgid "Are you sure you want discard changes?"
+msgstr "Отказване на промените?"
+
+#: src/callbacks.c:477
+msgid "Are you sure you want to delete this item?"
+msgstr "Потвърдете изтриването"
+
+#: src/callbacks.c:495 src/callbacks.c:906 src/fpm.c:1700
+#, c-format
+msgid "Passwords in category: %d"
+msgstr "Парола в категорията: %d"
+
+#: src/callbacks.c:520
+#, fuzzy
+msgid "Export passwords"
+msgstr "_Изнасяне на пароли"
+
+#: src/callbacks.c:536
+msgid "Export type:"
+msgstr "Тип на експорта"
+
+#: src/callbacks.c:541 src/callbacks.c:612
+msgid "Plain XML"
+msgstr "Текст XML"
+
+#: src/callbacks.c:547 src/callbacks.c:616
+#, fuzzy
+msgid "Launchers:"
+msgstr "Пуск:"
+
+#: src/callbacks.c:551
+msgid "Do not export"
+msgstr "Не изнасяй"
+
+#: src/callbacks.c:552
+msgid "Export only the launchers, which are used in the selected category"
+msgstr "Изнасяне само на стартерите, които се използват в избраната категория"
+
+#: src/callbacks.c:553
+#, fuzzy
+msgid "Export all"
+msgstr "Изнасяне на _всичко"
+
+#: src/callbacks.c:599
+msgid "Import Password File"
+msgstr "Внасяне на файл с пароли"
+
+#: src/callbacks.c:609
+msgid "Import type:"
+msgstr "Тип на внасяне:"
+
+#: src/callbacks.c:619
+msgid "Do not import"
+msgstr "Не внасяй"
+
+#: src/callbacks.c:620
+msgid "Import only new launchers"
+msgstr "Внасяне само на пускове"
+
+#: src/callbacks.c:621
+msgid "Import and replace all current launchers"
+msgstr "Внасяне и заместване на всички пускове"
+
+#: src/callbacks.c:631
+msgid "Do not change the category of items and import as it is."
+msgstr "Не променя типа на обектите и внасяне такива каквито са"
+
+#: src/callbacks.c:635
+msgid "Entries:"
+msgstr ""
+
+#: src/callbacks.c:637
+#, fuzzy
+msgid "Import"
+msgstr "Тип на внасяне:"
+
+#: src/callbacks.c:638
+msgid "Replace entries with same title"
+msgstr ""
+
+#: src/callbacks.c:639
+msgid "Replace entries with same title and category"
+msgstr ""
+
+#: src/callbacks.c:689
+#, fuzzy, c-format
+msgid ""
+"Current location of password file:\n"
+"%s\n"
+"\n"
+"Cipher: %s\n"
+"\n"
+"KDF iterations: %i"
+msgstr ""
+"Път до файла с паролите:\n"
+"%s"
+
+#: src/callbacks.c:704 src/fpm.c:591
+msgid "Do you want to save changes?"
+msgstr "Запазване на промените"
+
+#: src/callbacks.c:710
+msgid "Open Password File"
+msgstr "Отваряне на файл с пароли"
+
+#: src/callbacks.c:736
+#, fuzzy
+msgid "Save Password File"
+msgstr "Записване на файл с пароли"
+
+#: src/callbacks.c:747 src/callbacks.c:1283
+msgid "Untitled password file"
+msgstr "Не посочен файл с пароли"
+
+#: src/callbacks.c:1210
+msgid "Select Key File"
+msgstr "Избиране на файл с ключове"
+
+#: src/callbacks.c:1272
+#, fuzzy
+msgid "New Password File"
+msgstr "Нов файл с пароли"
+
+#: src/callbacks.c:1367
+#, fuzzy
+msgid "Please enter launcher name."
+msgstr "Въведете име на пуска:"
+
+#: src/callbacks.c:1412
+msgid "Hide Key File Dialog"
+msgstr "Скриване на диалога за файл с ключове"
+
+#: src/callbacks.c:1417
+msgid "Show Key File Dialog"
+msgstr "Покажи прозореца за избор на файл с ключове"
+
+#: src/callbacks.c:1516
+#, fuzzy
+msgid "Are you sure you want decrypt and display ALL passwords?"
+msgstr "Отказване на промените?"
+
+#: src/support.c:105 src/support.c:129
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "Не мога а намеря pixmap файл: %s"
+
+#: src/fpm.c:65
+msgid "Title"
+msgstr "Заглавие"
+
+#: src/fpm.c:66
+msgid "URL"
+msgstr "URL"
+
+#: src/fpm.c:68
+#, fuzzy
+msgid "Password"
+msgstr "Парола:"
+
+#: src/fpm.c:70
+#, fuzzy
+msgid "Notes"
+msgstr "Бележки:"
+
+#: src/fpm.c:71
+#, fuzzy
+msgid "Launcher"
+msgstr "Програма:"
+
+#: src/fpm.c:190 src/fpm.c:871
+msgid "Cannot read key file!"
+msgstr "Не мога да прочета файла с ключовете"
+
+#: src/fpm.c:211
+msgid "Password incorrect.  Please try again."
+msgstr "Грешна парола Опитайте отново."
+
+#: src/fpm.c:215
+msgid ""
+"Old FPM file is not supported by this FPM2 version. For convert to new "
+"format use FPM2 0.79 version.\n"
+msgstr ""
+
+#: src/fpm.c:219
+msgid ""
+"Sorry, the password file cannot be read because it uses a future file "
+"format. Please download the latest version of FPM2 and try again.\n"
+msgstr ""
+"Файла с паролите не може да бъде отворен, защото използва форматподдържан "
+"само от по - новите версии на FPM2Свалете по - нова версия на FPM2 и "
+"опитайте отново\n"
+
+#: src/fpm.c:223
+#, fuzzy
+msgid "File is not FPM2 file."
+msgstr "Файла не е валиден FPM2 файл с пароли"
+
+#: src/fpm.c:227
+msgid "Unknown cipher in FPM2 file header."
+msgstr ""
+
+#: src/fpm.c:231
+msgid "FPM2 file corrupted. Please try another from backup."
+msgstr ""
+
+#: src/fpm.c:235
+msgid "Unknown file error."
+msgstr ""
+
+#: src/fpm.c:243
+msgid ""
+"Old file format detected.\n"
+"\n"
+"Do you want change password file to new more secure cipher?\n"
+"\n"
+"Please take note that it will not be possible to continue open this password "
+"file in the earlier version FPM2."
+msgstr ""
+"Остарял формат на файла с паролите.\n"
+"\n"
+"Искате ли да преминете към новия по - сигурен шифър?\n"
+"\n"
+"Бележка: Няма да можете да използвате новия формат на шифъра/файла със по - "
+"стари версии на FPM2."
+
+#: src/fpm.c:252
+#, fuzzy
+msgid "Conversion of password file is done!"
+msgstr ""
+"Конвертирането на файла приключи успешно:\n"
+"%s"
+
+#: src/fpm.c:295
+#, c-format
+msgid "Could not open %s"
+msgstr "Не мога да отворя %s"
+
+#: src/fpm.c:303
+#, c-format
+msgid ""
+"Could not lock %s\n"
+"File already locked."
+msgstr ""
+"Не мога да заключа %s.\n"
+"Файла вече е заключен."
+
+#: src/fpm.c:467
+#, c-format
+msgid ""
+"Password exceeded limit of %d characters\n"
+"Your password of %d characters was truncated."
+msgstr ""
+"Паролата надхвърля ограничението до %d символа\n"
+"Паролата е скъсена до %d символа."
+
+#: src/fpm.c:704
+#, fuzzy
+msgid "primary selection"
+msgstr "основен избор"
+
+#: src/fpm.c:705
+#, fuzzy
+msgid "user"
+msgstr "потребител"
+
+#: src/fpm.c:709
+#, fuzzy
+msgid "clipboard"
+msgstr "клипборд"
+
+#: src/fpm.c:712
+#, fuzzy
+msgid "password"
+msgstr "парола"
+
+#: src/fpm.c:714
+#, c-format
+msgid "Copy %s to %s."
+msgstr "Копиране %s в %s"
+
+#: src/fpm.c:831
+msgid ""
+"This password's launcher command is undefined.\n"
+"Please define it in the edit launcher preference screen."
+msgstr ""
+"Не дефиниран пуск за тази парола.\n"
+"Дефинирайте пуск в Настройки на пуск."
+
+#: src/fpm.c:835
+msgid ""
+"This password's launcher is undefined.\n"
+"Please define it in the edit password item screen."
+msgstr ""
+"Не дефиниран пуск за тази парола..\n"
+"Дефинирайте пуск в Редактиране на пароли'."
+
+#: src/fpm.c:857
+msgid "Sorry, the passwords do not match."
+msgstr "Посочени различни пароли."
+
+#: src/fpm.c:862
+msgid "Sorry, your password is too short."
+msgstr "Прекалено кратка парола."
+
+#: src/fpm.c:1026
+#, fuzzy
+msgid "Information"
+msgstr "Информация"
+
+#: src/fpm.c:1027
+msgid "_Close"
+msgstr ""
+
+#: src/fpm.c:1572
+msgid "Figaro's Password Manager 2 - locked"
+msgstr "Figaro's Password Manager 2 - заключен"
+
+#: src/fpm.c:1644
+#, fuzzy
+msgid "Question"
+msgstr "Въпрос"
+
+#: src/fpm.c:1657
+#, fuzzy
+msgid "Primary selection"
+msgstr "Основен избор"
+
+#: src/fpm.c:1658
+#, fuzzy
+msgid "Clipboard"
+msgstr "Клипборд"
+
+#: src/fpm.c:1664
+msgid ""
+"\n"
+"Please select a row."
+msgstr ""
+"\n"
+"Изберете ред."
+
+#: src/fpm.h:67
+msgid "<ALL CATEGORIES>"
+msgstr "<Alle Kategorien>"
+
+#: src/fpm.h:68
+msgid "<DEFAULTS>"
+msgstr "<Standardeinträge>"
+
+#: src/fpm.h:69
+msgctxt "category"
+msgid "<NONE>"
+msgstr ""
+
+#: src/fpm_file.c:333
+#, c-format
+msgid "Saved %d password(s)."
+msgstr "%d съхранени пароли"
+
+#: src/fpm_file.c:428
+#, fuzzy, c-format
+msgid "Exported clear XML passwords to %s."
+msgstr "Изнесен XML файл с пароли: %s"
+
+#: src/fpm_file.c:763
+msgid "File is not XML?"
+msgstr "Файла не е в XML формат"
+
+#: src/fpm_file.c:769
+#, fuzzy
+msgid "File is not valid FPM2 password file."
+msgstr "Файла не е валиден FPM2 файл с пароли"
+
+#: src/fpm_file.c:778 src/fpm_file.c:827
+#, fuzzy
+msgid "Invalid password file."
+msgstr "Не валиден файл с пароли"
+
+#: src/fpm_file.c:922
+#, fuzzy, c-format
+msgid "Imported %d password(s)."
+msgstr "%d пароли внесени"
+
+#: data/fpm2.desktop.in:3
+#, fuzzy
+msgid "Password Manager"
+msgstr "Парола:"
+
+#: data/fpm2.desktop.in:4
+#, fuzzy
+msgid "Manage passwords"
+msgstr "_Промяна на парола"
+
+#: data/fpm2.metainfo.xml.in:10
+msgid ""
+"FPM2 is a GUI password manager using the GTK3 libraries. Passwords are "
+"encrypted using the AES-256 GCM algorithm."
+msgstr ""
+
+#~ msgid "Find:"
+#~ msgstr "Намери:"
+
+#, fuzzy
+#~ msgid "Do nothing"
+#~ msgstr "Не внасяй"
+
+#, fuzzy
+#~ msgid "Save password list"
+#~ msgstr "Запиши списък с промени"
+
+#, fuzzy
+#~ msgid "Please enter your master password"
+#~ msgstr "Въведете парола:"
+
+#~ msgid "Unrecognized option.\n"
+#~ msgstr "Непозната опция\n"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Настройки"
+
+#~ msgid "Search Conditions"
+#~ msgstr "Правила за търсене"
+
+#~ msgid "Could not create a link to %s"
+#~ msgstr "Не мога да създам връзка към %s"
+
+#~ msgid "Could not fstat %s"
+#~ msgstr "Не мога да направя fstat %s"
+
+#~ msgid ""
+#~ "Lock file %s exists.\n"
+#~ "If you know this to be an error, clean up the\n"
+#~ "lock files inthe directory %s."
+#~ msgstr ""
+#~ "Съществува заключващ файл %s.\n"
+#~ "Ако мислите, че това е грешка, изтрийте\n"
+#~ "файловет в директорията %s."
+
+#~ msgid "Loaded %d password(s)."
+#~ msgstr "%d Passwörter geladen"
+
+#, fuzzy
+#~ msgid "FPM2: Launcher Preferences"
+#~ msgstr "FPM: Programmstarter Einstellungen"
+
+#, fuzzy
+#~ msgid "Du_plicate Item"
+#~ msgstr "Eintrag _löschen"
+
+#, fuzzy
+#~ msgid "category|<NONE>"
+#~ msgstr "Kategorie"
+
+#, fuzzy
+#~ msgid "FPM2: New Password File"
+#~ msgstr "Passwortdatei öffnen"
+
+#~ msgid "Edit"
+#~ msgstr "Bearbeiten"
+
+#~ msgid "Delete"
+#~ msgstr "Löschen"
+
+#~ msgid "Enter your password here."
+#~ msgstr "Gib Dein Passwort hier ein."
+
+#~ msgid "Password File Import"
+#~ msgstr "Passwortdatei-Import"
+
+#~ msgid ""
+#~ "File Import\n"
+#~ "Select file that you wish to imports passwords from.\n"
+#~ "\n"
+#~ "The file should be in a TAB delimited format.\n"
+#~ "TITLE USERID PASSWD URL CATEGORY\n"
+#~ msgstr ""
+#~ "Datei Import\n"
+#~ "Wähle die Datei, aus der Du Passwörter importieren möchtest.\n"
+#~ "\n"
+#~ "Die Datei sollte in einem TAB begrenztem Format vorliegen.\n"
+#~ "TITLE USERID PASSWD URL CATEGORY\n"
+
+#~ msgid "tab delimited"
+#~ msgstr "TAB begrenzt"
+
+#~ msgid "All Files"
+#~ msgstr "Alle Dateien"
