@@ -375,9 +375,18 @@ gchar* get_new_salt(gint len)
   ret_val = g_malloc0(len*2+1);
   rnd = fopen("/dev/urandom", "r");
 
-  ret = fread(data, 1, len, rnd);
+  if (rnd == NULL) {
+    g_warning ("Cannot open /dev/urandom for legacy salt generation.");
+    memset (data, 0, len);
+  } else {
+    ret = fread(data, 1, len, rnd);
+    if (ret != len) {
+      g_warning ("Short read from /dev/urandom for legacy salt generation.");
+    }
+    fclose(rnd);
+  }
+
   fpm_bin_to_hex(ret_val, data, len);
-  fclose(rnd);
   g_free(data);
   return(ret_val);
 }

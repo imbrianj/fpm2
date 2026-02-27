@@ -866,9 +866,9 @@ fpm_file_import (gchar *file_name, gint import_launchers, gchar *import_category
 
                 xmlplain = (gchar *)xmlNodeListGetString (doc, attr->xmlChildrenNode, 1);
                 if (xmlplain != NULL) {
-                    strncpy (plaintext, xmlplain , FPM_PASSWORD_LEN);
+                    g_strlcpy (plaintext, xmlplain, sizeof (plaintext));
                 } else {
-                    strcpy (plaintext, "");
+                    plaintext[0] = '\0';
                 }
 
 		if (!state->legacy_cipher) {

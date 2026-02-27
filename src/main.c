@@ -44,7 +44,10 @@ main (int argc, char *argv[])
   textdomain (GETTEXT_PACKAGE);
 #endif
 
-  gtk_init (&argc, &argv);
+  if (!gtk_init_check (&argc, &argv)) {
+    g_printerr ("Failed to initialize GTK. Make sure a graphical display is available.\n");
+    return 1;
+  }
 
   add_pixmap_directory (PACKAGE_PIXMAP_DIR);
 

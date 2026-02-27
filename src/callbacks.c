@@ -34,6 +34,16 @@
 #include "interface.h"
 #include "support.h"
 
+static void
+fpm_popup_menu_at_event (GtkMenu *menu, GdkEvent *event)
+{
+#if GTK_CHECK_VERSION(3, 22, 0)
+    gtk_menu_popup_at_pointer (menu, event);
+#else
+    gtk_menu_popup (menu, NULL, NULL, NULL, NULL, 0, gtk_get_current_event_time ());
+#endif
+}
+
 
 void
 on_about1_activate                     (GtkMenuItem     *menuitem,
@@ -42,7 +52,7 @@ on_about1_activate                     (GtkMenuItem     *menuitem,
 	GtkWidget *about_dialog;
 
 	about_dialog = create_dialog_about();
-	gtk_window_set_icon (GTK_WINDOW(about_dialog), gtk_widget_render_icon (about_dialog, GTK_STOCK_ABOUT, GTK_ICON_SIZE_MENU, NULL));
+	gtk_window_set_icon_name (GTK_WINDOW (about_dialog), "fpm2");
 	gtk_window_set_transient_for (GTK_WINDOW(about_dialog), GTK_WINDOW(gui->main_window));
 
 	gtk_widget_show (about_dialog);
@@ -64,7 +74,11 @@ on_button_ok_clicked                   (GtkButton       *button,
 	gtk_widget_destroy (gui->edit_window);
 
 	/* Move cursor on added item */
-	gtk_tree_view_set_cursor (gui->main_clist, gtk_tree_path_new_from_string(g_strdup_printf("%i", glb_cur_row)), NULL, FALSE);
+	gchar *path_str = g_strdup_printf ("%i", glb_cur_row);
+	GtkTreePath *path = gtk_tree_path_new_from_string (path_str);
+	gtk_tree_view_set_cursor (gui->main_clist, path, NULL, FALSE);
+	gtk_tree_path_free (path);
+	g_free (path_str);
 	gtk_widget_set_sensitive (gui->main_window, TRUE);
 	gtk_widget_grab_focus (GTK_WIDGET (gui->main_clist));
 
@@ -180,8 +194,7 @@ on_clist_main_select_row               (GtkTreeView *treeview,
 	    if (gui->context_menu == NULL)
 		gui->context_menu = GTK_MENU(create_context_menu());
 
-    	    gtk_menu_popup (gui->context_menu, NULL, NULL, NULL, NULL,
-			0, gtk_get_current_event_time ());
+    	    fpm_popup_menu_at_event (gui->context_menu, NULL);
 
 	    glb_click_btn = FALSE;
     }
@@ -914,8 +927,18 @@ on_optionmenu_category_changed         (GtkComboBox     *combobox,
     while (valid) {
 	gtk_tree_model_get(model, &iter, FPM_DATA_POINTER, &tmp_data, -1);
 	if( glb_edit_data == tmp_data ) {
-	    tmp_row = atoi(gtk_tree_model_get_string_from_iter(model, &iter));
-	    gtk_tree_view_set_cursor(gui->main_clist, gtk_tree_path_new_from_string(g_strdup_printf("%i", tmp_row)), NULL, FALSE);
+	    gchar *row_str = gtk_tree_model_get_string_from_iter (model, &iter);
+	    gchar *path_str;
+	    GtkTreePath *path;
+
+	    tmp_row = atoi (row_str);
+	    g_free (row_str);
+
+	    path_str = g_strdup_printf ("%i", tmp_row);
+	    path = gtk_tree_path_new_from_string (path_str);
+	    gtk_tree_view_set_cursor (gui->main_clist, path, NULL, FALSE);
+	    gtk_tree_path_free (path);
+	    g_free (path_str);
 	    gtk_widget_grab_focus (GTK_WIDGET(gui->main_clist));
 	    break;
 	}
@@ -1026,8 +1049,12 @@ tray_icon_on_menu			(GtkStatusIcon *status_icon, guint button,
 		gtk_widget_hide (GTK_WIDGET(lookup_widget (GTK_WIDGET(gui->tray_menu) , "tr_about1")));
 	}
 
+#if GTK_CHECK_VERSION(3, 22, 0)
+	gtk_menu_popup_at_pointer (gui->tray_menu, NULL);
+#else
 	gtk_menu_popup (gui->tray_menu, NULL, NULL, gtk_status_icon_position_menu, status_icon,
 					0, gtk_get_current_event_time());
+#endif
 }
 
 void
@@ -1133,8 +1160,7 @@ on_toolbar1_popup_context_menu         (GtkToolbar      *toolbar,
                                         gint             arg3,
                                         gpointer         user_data)
 {
-    gtk_menu_popup (gui->toolbar_menu, NULL, NULL, NULL, NULL,
-	    	        0, gtk_get_current_event_time ());
+    fpm_popup_menu_at_event (gui->toolbar_menu, NULL);
     return FALSE;
 }
 

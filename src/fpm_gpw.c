@@ -170,10 +170,8 @@ fpm_gpw_gen_password(void)
 /* Actually generate the passwords.  Notice fpm_gpw_set_options must be called
  * before running this routine, because gpw_chars and gpw_num_chars need to
  * be populated.
- * This routine assumes the existance of /dev/random.  Password generation is
- * needs good entropy, which is why I use /dev/random here.  This makes the
- * code less portable, however.  Perhaps we should roll back to another
- * random number generator if /dev/random fails.
+ * Password generation requires strong entropy. We prefer /dev/urandom and
+ * gracefully fall back to GLib's RNG if the device is unavailable or unreadable.
  */
 {
   gchar* password;
@@ -183,12 +181,28 @@ fpm_gpw_gen_password(void)
 
   password = g_malloc0(gpw_len+1);
 
-  rnd = fopen("/dev/random", "r");
+  rnd = fopen("/dev/urandom", "r");
+
+  if (rnd == NULL) {
+    g_warning ("Cannot open /dev/urandom for password generation.");
+    for (i = 0; i < gpw_len; i++) {
+      idx = g_random_int_range (0, gpw_num_chars);
+      password[i] = gpw_chars[idx];
+    }
+    return (password);
+  }
 
   for (i=0;i<gpw_len;i++)
   {
     ret = fread(&rnd_num, sizeof(guint16), 1, rnd);
-    idx = floor(gpw_num_chars * rnd_num / pow(2, 16));
+    if (ret != 1) {
+      idx = g_random_int_range (0, gpw_num_chars);
+    } else {
+      idx = floor(gpw_num_chars * rnd_num / pow(2, 16));
+      if (idx >= gpw_num_chars) {
+        idx = gpw_num_chars - 1;
+      }
+    }
     password[i] = gpw_chars[idx];
   }
   fclose(rnd);
